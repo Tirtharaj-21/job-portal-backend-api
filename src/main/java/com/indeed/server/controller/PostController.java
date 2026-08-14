@@ -15,7 +15,7 @@ import java.util.List;
 @RestController
 @Slf4j
 @RequiredArgsConstructor
-@CrossOrigin
+@CrossOrigin(origins = "https://job-portal-frontend-nine-sooty.vercel.app")
 public class PostController {
 
     @Autowired
