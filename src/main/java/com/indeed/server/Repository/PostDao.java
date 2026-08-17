@@ -1,6 +1,6 @@
-package com.indeed.server.dao;
+package com.indeed.server.Repository;
 
-import com.indeed.server.model.PostModel;
+import com.indeed.server.Entity.PostModel;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 //DAO = Data Access Object

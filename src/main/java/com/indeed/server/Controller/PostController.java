@@ -1,9 +1,9 @@
-package com.indeed.server.controller;
+package com.indeed.server.Controller;
 
-import com.indeed.server.constants.APIConstants;
-import com.indeed.server.dto.PostDTO;
-import com.indeed.server.model.PostModel;
-import com.indeed.server.service.PostService;
+import com.indeed.server.Constants.APIConstants;
+import com.indeed.server.Dto.PostDTO;
+import com.indeed.server.Entity.PostModel;
+import com.indeed.server.Service.PostService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
