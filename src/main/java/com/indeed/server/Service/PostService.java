@@ -1,7 +1,7 @@
-package com.indeed.server.service;
+package com.indeed.server.Service;
 
-import com.indeed.server.dto.PostDTO;
-import com.indeed.server.model.PostModel;
+import com.indeed.server.Dto.PostDTO;
+import com.indeed.server.Entity.PostModel;
 
 import java.util.List;
 
