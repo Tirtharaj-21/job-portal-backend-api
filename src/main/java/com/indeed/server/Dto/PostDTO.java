@@ -2,7 +2,6 @@ package com.indeed.server.Dto;
 
 import jakarta.validation.constraints.NotEmpty;
 import lombok.Data;
-
 @Data
 public class PostDTO {
     // It checks or validate the  frontend object
