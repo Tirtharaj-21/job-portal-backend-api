@@ -1,8 +1,8 @@
-package com.indeed.server.service;
+package com.indeed.server.Service;
 
-import com.indeed.server.dao.PostDao;
-import com.indeed.server.dto.PostDTO;
-import com.indeed.server.model.PostModel;
+import com.indeed.server.Repository.PostDao;
+import com.indeed.server.Dto.PostDTO;
+import com.indeed.server.Entity.PostModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
