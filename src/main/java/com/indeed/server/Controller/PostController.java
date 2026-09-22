@@ -21,13 +21,6 @@ import java.util.List;
                 "http://localhost:3000",
                 "https://job-portal-frontend-nine-sooty.vercel.app"
         }
-//        methods = {
-//                RequestMethod.GET,
-//                RequestMethod.POST,
-//                RequestMethod.PUT,
-//                RequestMethod.DELETE,
-//                RequestMethod.OPTIONS
-//        }
 )
 public class PostController {
 
