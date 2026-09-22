@@ -86,7 +86,10 @@ public class SecurityConfig {
         CorsConfiguration configuration = new CorsConfiguration();
 
         configuration.setAllowedOrigins(
-                List.of("http://localhost:5173")
+                List.of(
+                        "http://localhost:5173",
+                        "https://job-portal-frontend-nine-sooty.vercel.app"
+                )
         );
 
         configuration.setAllowedMethods(
