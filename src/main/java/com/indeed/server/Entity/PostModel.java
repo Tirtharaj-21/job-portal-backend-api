@@ -4,12 +4,9 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
-import org.hibernate.annotations.JdbcTypeCode;
-import org.hibernate.type.SqlTypes;
 
 import java.time.Instant;
+import java.util.List;
 
 @Entity
 @Table(name = "posts")
@@ -34,9 +31,10 @@ public class PostModel {
     private String experience;
 
     @NotNull
-    @JdbcTypeCode(SqlTypes.ARRAY)
-    @Column(columnDefinition = "text[]")
-    private String[] technology;
+    @ElementCollection(fetch = FetchType.EAGER)
+    @CollectionTable(name = "post_technologies", joinColumns = @JoinColumn(name = "post_id"))
+    @Column(name = "technology", nullable = false)
+    private List<String> technology;
 
     @NotNull
     private String salary;

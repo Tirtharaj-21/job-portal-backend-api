@@ -15,7 +15,20 @@ import java.util.List;
 @RestController
 @Slf4j
 @RequiredArgsConstructor
-@CrossOrigin(origins = "https://job-portal-frontend-nine-sooty.vercel.app")
+@CrossOrigin(
+        origins = {
+                "http://localhost:5173",
+                "http://localhost:3000",
+                "https://job-portal-frontend-nine-sooty.vercel.app"
+        }
+//        methods = {
+//                RequestMethod.GET,
+//                RequestMethod.POST,
+//                RequestMethod.PUT,
+//                RequestMethod.DELETE,
+//                RequestMethod.OPTIONS
+//        }
+)
 public class PostController {
 
     @Autowired
