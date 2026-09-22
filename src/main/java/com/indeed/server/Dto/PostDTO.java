@@ -3,6 +3,8 @@ package com.indeed.server.Dto;
 import jakarta.validation.constraints.NotEmpty;
 import lombok.Data;
 
+import java.util.List;
+
 @Data
 public class PostDTO {
     // It checks or validate the  frontend object
@@ -15,7 +17,7 @@ public class PostDTO {
     @NotEmpty
     private String experience;
 
-    private String technology[];
+    private List<String> technology;
     @NotEmpty
     private String salary;
 }
